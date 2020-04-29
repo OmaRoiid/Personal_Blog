@@ -1,0 +1,286 @@
+@import url("nav.css");
+@import url("footer.css");
+html{
+  font-family: 'Raleway', sans-serif;
+  color: #555;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Oswald', sans-serif;
+}
+body{
+  margin: 0;
+  background-color: #f9f9f9;
+  overflow-x: hidden;
+}
+.container{
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 190px 280px 250px;
+  grid-template-rows: 220px 510px;
+  grid-template-areas:  
+  "hd hd hd hd"
+  "cont cont cont bio"
+  "footer footer footer bio"
+  ;
+}
+.header{
+  grid-area: hd;
+}
+.header h1{
+  text-align: center;
+  margin-top: 40px;
+}
+.content{
+  grid-area:cont;
+  display: flex;
+  flex-direction: column;
+}
+.content .blog_name h2,h3{
+  margin: 0;
+}
+.content .blog_info img{
+  margin-top: 15px;
+  width: 750px;
+  height: 300px;
+}
+.content .blog_info p{
+  font-size: 16px; 
+}
+
+.bio{
+  grid-area: bio;
+}
+.bio h2{
+  margin: 0;
+}
+.bio .me {
+  display: flex;
+  flex-direction: row;
+}
+.bio .me .avatar {
+  margin-top: 15px;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.bio .me .info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.bio .me .info h2,h3{
+  margin: 0;
+}
+.bio .about p {
+  text-align: center;
+  line-height: 1.5;
+  padding: 20px;
+  font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.social{
+  color: black;
+  text-align: center;
+  display:  flex;
+  flex-direction: column;
+  align-items: center;
+}
+.social h3{
+  margin-left: 35px;
+}
+.social ul{
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+}
+.social ul li {
+  list-style-type: none;
+  margin-right: 15px;
+  margin-left: 15px;
+  size: 24px;
+}
+.social ul li:hover {
+  opacity: 0.7;
+}
+.social ul li a{
+  color:black;
+  font-size: 36px;
+  cursor: pointer;
+} 
+ /* tablets and landscabe*/
+  @media (max-width: 1025px){
+  .container{
+    align-items: center;
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 910px;
+    grid-template-rows: 210px;
+    grid-template-areas:  
+    "hd"
+    "cont"
+    "footer"
+    "bio"
+    ;
+  }
+  .header{
+    padding: 10px;
+    margin: 20px;
+  }
+  .header h1{
+    font-size: 26px;
+   margin-left: 15px;
+    text-align: center;
+  }
+  .content .blog_name h2{
+    font-size:20px;
+    margin: 0;
+  }
+  .content .blog_name h3{
+    font-size:18px;
+    margin: 0;
+  }
+  .content .blog_info img{
+    margin-top: 15px;
+    width: 910px;
+    height: 300px;
+  }
+  .bio h2{
+    text-align: center;
+  }
+  .bio .info h2{
+    font-size: 20px;
+    margin: 0;
+  }
+  .bio .info h3{
+    font-size: 18px;
+    margin: 0;
+  }
+  .social .ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  }
+  /*mobiles*/
+  @media(min-width: 600px) and (max-width: 900px){
+    .container{
+      align-items: center;
+      padding: 20px;
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 665px;
+      grid-template-rows: 210px;
+      grid-template-areas:  
+      "hd"
+      "cont"
+      "footer"
+      "bio"
+      ;
+    }
+    .header{
+      padding: 10px;
+      margin: 20px;
+    }
+    .header h1{
+      font-size: 26px;
+     margin-left: 15px;
+      text-align: center;
+    }
+    .content .blog_name h2{
+      font-size:20px;
+      margin: 0;
+    }
+    .content .blog_name h3{
+      font-size:18px;
+      margin: 0;
+    }
+    .content .blog_info img{
+      margin-top: 15px;
+      width: 665px;
+      height: 300px;
+    }
+    .bio h2{
+      text-align: center;
+    }
+    .bio .info h2{
+      font-size: 20px;
+      margin: 0;
+    }
+    .bio .info h3{
+      font-size: 18px;
+      margin: 0;
+    }
+    .social .ul{
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  @media(max-width: 600px){
+    .container{
+      align-items: center;
+      padding: 20px;
+      display: grid;
+      gap: 20px;
+      grid-template-columns: 450px;
+      grid-template-rows: 210px;
+      grid-template-areas:  
+      "hd"
+      "cont"
+      "footer"
+      "bio"
+      ;
+    }
+    .header{
+      padding: 10px;
+      margin: 20px;
+    }
+    .header h1{
+      font-size: 26px;
+     margin-left: 15px;
+      text-align: center;
+    }
+    .content .blog_name h2{
+      font-size:20px;
+      margin: 0;
+    }
+    .content .blog_name h3{
+      font-size:18px;
+      margin: 0;
+    }
+    .content .blog_info img{
+      margin-top: 15px;
+      width: 450px;
+      height: 300px;
+    }
+    .bio h2{
+      text-align: center;
+    }
+    .bio .info h2{
+      font-size: 20px;
+      margin: 0;
+    }
+    .bio .info h3{
+      font-size: 18px;
+      margin: 0;
+    }
+    .social .ul{
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+    }
+
+  }
+
+  
+  

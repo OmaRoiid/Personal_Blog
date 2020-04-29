@@ -1,0 +1,13 @@
+body .footer{
+    grid-area: footer;
+  }
+  body .footer .reed{
+    text-align: center;
+    background-color: black;
+  }
+  body .footer a {
+      margin-top: 15px;
+      display:inline-block;
+      text-decoration: none;
+      color: white;
+  }
