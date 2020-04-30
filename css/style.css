@@ -1,5 +1,5 @@
-@import url("nav.css");
-@import url("footer.css");
+@import "nav.css";
+@import "footer.css";
 @import url("https://fonts.googleapis.com/css?family=Oswald|Raleway&display=swap");
 html{
   font-family: 'Raleway', sans-serif;
@@ -40,7 +40,13 @@ body{
 .content .blog_name h2,h3{
   margin: 0;
 }
-.content .blog_info img{
+.content .blog_info figure {
+  margin: 0;
+}
+.content .blog_info figure figcaption {
+  text-align: center;
+}
+.content .blog_info figure img{
   margin-top: 15px;
   width: 750px;
   height: 300px;
