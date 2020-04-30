@@ -60,11 +60,37 @@ html{
   .content .blog_info p{
     font-size: 16px; 
   }
+  .content .blog_info h3{
+    text-align: center;
+  }
   .bio{
     text-align: center;
   }
   .bio h2{
-    margin-left: 38px;
+    margin-right: 33px;
+  }
+  .bio .me {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 49px;
+  }
+  .bio .me .avatar {
+    margin-top: 15px;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .bio .me .info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+  .bio .me .info h2,h3{
+    margin: 0;
   }
   .social{
     color: white;
@@ -77,6 +103,7 @@ html{
     margin-bottom: 25px;
     display: flex;
     flex-direction: row;
+    margin-right: 64px;
   }
   .social ul li {
     list-style-type: none;

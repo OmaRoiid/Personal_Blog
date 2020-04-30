@@ -1,5 +1,6 @@
 @import url("nav.css");
 @import url("footer.css");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Raleway&display=swap");
 html{
   font-family: 'Raleway', sans-serif;
   color: #555;
@@ -21,13 +22,13 @@ body{
   grid-template-areas:  
   "hd hd hd hd"
   "cont cont cont bio"
-  "footer footer footer bio"
+  "button button button bio"
   ;
 }
 .header{
   grid-area: hd;
 }
-.header h1{
+ .header h1{
   text-align: center;
   margin-top: 40px;
 }
@@ -43,6 +44,9 @@ body{
   margin-top: 15px;
   width: 750px;
   height: 300px;
+}
+.content .blog_info h3{
+ text-align: center;
 }
 .content .blog_info p{
   font-size: 16px; 
@@ -112,7 +116,23 @@ body{
   color:black;
   font-size: 36px;
   cursor: pointer;
-} 
+}
+.button{
+  grid-area: button;
+}
+
+ .button .reed{
+  text-align: center;
+  background-color: black;
+}
+
+ .button a {
+   padding-bottom: 15px;
+    margin-top: 15px;
+    display:inline-block;
+    text-decoration: none;
+    color: white;
+}
  /* tablets and landscabe*/
   @media (max-width: 1025px){
   .container{
@@ -125,7 +145,7 @@ body{
     grid-template-areas:  
     "hd"
     "cont"
-    "footer"
+    "button"
     "bio"
     ;
   }
@@ -181,7 +201,7 @@ body{
       grid-template-areas:  
       "hd"
       "cont"
-      "footer"
+      "button"
       "bio"
       ;
     }
@@ -236,7 +256,7 @@ body{
       grid-template-areas:  
       "hd"
       "cont"
-      "footer"
+      "button"
       "bio"
       ;
     }
